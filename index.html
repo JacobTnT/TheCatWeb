@@ -6,16 +6,12 @@
     <link rel="stylesheet" type="text/css" media="screen" href="cat.css">
     <script src="main.js"></script>
   <style>
-h2 {
-  font-size:1.5em;
-  
-}
-p {
-  line-height: 1.2em;
+p.zoo {
+  font-size: 30px;
   text-align: justify;
 }
 li {
-  font-size: 1.1em;
+  font-size: small;
   line-height: 1.5em;
 }
 h1{
@@ -99,43 +95,67 @@ h3.npc{
 h3.xy{
   background-color:red ;
 }
-h3.yx{
+h2.yx{
   background-color: orange;
 }
 
-h3.s{
+h2.s{
   background-color: green;
 }
 
-h3.t{
+h2.t{
   background-color: cadetblue;
 }
+p.update{
+  font-size: large;
+}
+
+form{
+  background-color: rgb(255, 170, 0);
+  padding:10px 300px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+}
+
+input{
+  all: unset;
+  font: 16px system-ui;
+  color: #fff;
+  height: 100%;
+  width:100%;
+  padding: 6px 10px;
+}
+::placeholder{
+  color:#fff;
+  opacity:#fff;
+}
+
     </style>
   </head>
   <body>
     <a href="dog.html">
     <button class="my_button" type="button"> 
-      <p> To All About Dogs!</p>
+      <p class = 'zoo'> To All About Dogs!</p>
     </button>
     </a>
 
     <a href="test.html">
     <button class="come-back-omg" type="back-omg">
-      <p> If you want to s </p>
+      <p class = 'zoo'> Go To Jacob's Websites </p>
     </button>
-    </a>
-
-    <a href="index.html">
-      <button class="button-clasroo" type="classroo"> If you hate cat's, Then go to the games!</button>
-    </a>
-
+  </a>
   <h1>All About Cats Part 1<h1>
   <h2> Introduction</h2>
 
-  <p> If you came to this website, your computer probably costs less than $100. Or 
-    just here to see the cat lifespan and the body. I created
-  </p>
+  <p> If you came to this website, your computer probably costs less than $100. Or    just here to see the cat lifespan and the body. I created :D</p>
 <p> There will be pictures of cats to see how they grow from Kitten to Geriatric.</p>
+<p class = 'update'> Update Voter</p>
+<form id="form">
+   <input type="update" id = "query" name = "q" placeholder = "Search..." aria-label = "Search through site content">
+   <button> Enter</button>
+</form>
   <h2 class = 'x'> Chatper 1 Their Life, Part 1, As a Kitten 1-7 months old</h2>  
   
 
@@ -165,7 +185,7 @@ friendly and confident cat. </p>
 <img src ='File101/JuniorCat.jpg' height="150px">
 
   <h3 class = 'brainRot'> Chatper 3, Adult Age 3 to 10 years old</h3>
-  <p class="a">Cats in this stage now have made their basic temperament and personality, They dont need a lot of 
+  <p class="a">Cats in this stage now have made their basic personality, They dont need a lot of 
 supervision as a kitten Still there are important things for an adult cat, Your cat will not be as active,
 Because your cat probably has less energy.But your cat still needs socialization, Also adult cats need yearly 
 checks,Here are important stuff you need to follow.</p>
@@ -192,8 +212,9 @@ checks,Here are important stuff you need to follow.</p>
    </ol>
   <p> A photo of a Senior Cat</p>
   <img src="File101/SeniorCat.jpg">
+
   <h3 class = 'genAlpha'> Chatper 5, Geriatric. 15 years to 26 years </h3>
-  <p>These cats encounter medical issues, exams twice a year, are fine at this stage. Keeping your pet as 
+  <p>These cats encounter medical issues, exams twice a year, Keeping your pet as 
   comfortable and as healthy as possible is really important, While this stage lasts years be prepared
  to make risky decisions  about when its time to say goodbye:,c but nothing lasts forever. Giving your
 pet the best care is important. </p>
@@ -232,7 +253,6 @@ pet the best care is important. </p>
 <li> Ear furnshings are hairs play a major role in maintaining  ear health 
   by providing a barrier to help prevent a variety of things from infiltarting
   the sensitive ear canal.</li>
-
   </ol>
   <h3 class ='y'> Phase 2, Cat Eyes</h3>
   <ol>
@@ -246,17 +266,14 @@ pet the best care is important. </p>
     how much light enters the eye. The pupil closes or opens to let less
     or more light. 
   </li>
-
   </ol>
 
-<ol>
 
-<li>Nictitating Membrane: Cats have a third eyelid to bring a added
+<p>Nictitating Membrane</p><li>: Cats have a third eyelid to bring a added
   layer of protection and keep the keeps moist while still allowing
 to see normal. The nictitaing membrane is not usually seeable 
 unless any bad condition is here. </li>
 
-</ol>
 
 <ul>
 <li>Iris: The colored, circular area around the pupil controls the 
@@ -302,58 +319,79 @@ unless any bad condition is here. </li>
    <p> Cat's are kinda OP.</p>
 
 
-   <h3 class ='yx'> Phase 2: Cat's Flank</h3>
+   <h2 class ='yx'> Phase 2: Cat's Flank</h2>
   <p> A cat's flank is the side of their body, It's where you will find their kidneys.
     Which are important for keeping the body clean. If they feel scared, They might puff their 
   flanks to look bigger/scarier.  </p>
  
-  <h3 class = 's'> Phase 3:  A Cat's Back</h3>
+  <h2 class = 's'> Phase 3:  A Cat's Back</h2>
   <p>  This part of the cat's body provides flexibility and power for movement,
     houses the spine and supporting muscles.
   </p>
   <li> Fun Fact: It can help with shock absorption</li>
 
-  <h3 class = 't'> A cat's chest</h3>
+  <h2 class = 't'> A cat's chest</h2>
   <p> A cat's chest houses vital organs like the heart and lungs. It also has powerful
     muscles for breathing/walking and jumping.
   </p>
-  <li> A cat's forelegs are important for balance, walking, climbing
+  <h3> A cat's forelegs</h3>
+  <p> The cat's forelegs important for balance, walking, climbing
     and capturing prey, Or not. It also functions as hands for digging
-    and gromming, playing</li>
-  <li> A cat's paws are like feet and hands. Like feet and hands. It helps
+    and gromming, playing</p>
+  <h3> A cat's paws</h3><p> are like feet and hands. Like feet and hands. It helps
     with walking climbing and hunting. Sharp claws are used in catching
     and climbing. while soft pads make them quiet and steady.
-  </li>
-  <li> A cat's belly houses vital organs like the stomach, intestines, liver 
+  </p>
+  <h3> A cat's belly </h3><p>houses vital organs like the stomach, intestines, liver 
     and kidneys. It's also where their soft, vulnerable underbelly is placed
     which is a protected area. 
-  </li>
+  </p>
   </ul>
-
+<ul>
   <h2> Dictionary Of Hard Words </h2>
+</ul>
       <p> A</p>
-<li> Adolescence: A period of switch between childhood and adulthood, this has many changes on the bodies or brains.</li>
-<li> Anterior Epithellium: Covers the front of the cornea and has 7 layers of cells.</li>
-<li> Arthritis: A sickness that causes joint pain.</li>
+ <li> Adolescence: A period of switch between childhood and adulthood, this has many changes on the bodies or brains.</li>
+ <li> Anterior Epithellium: Covers the front of the cornea and has 7 layers of cells.</li>
+ <li> Arthritis: A sickness that causes joint pain.</li>
     <p> B</p>
-<li> Baseline: Gives a starting point to see how much has changed or improved over time.</li>
-<li> Bulbar Conjectiva: Clear, thin white part on your eye.</li>
+  <li> Baseline: Gives a starting point to see how much has changed or improved over time.</li>
+  <li> Bulbar Conjectiva: Clear, thin white part on your eye.</li>
     <p> C</p>
-<li> Cornea: Clear dome shape outer layer of the eye. If you didn't have it, you can't really see.</li>
+  <li> Cornea: Clear dome shape outer layer of the eye. If you didn't have it, you can't really see.</li>
     <p>I</p>
-<li> Iris: The colored part of your eye, It helps regulate how much light enters the eye. Or else, you'll look at the sun with no wonder.</li>
+  <li> Iris: The colored part of your eye, It helps regulate how much light enters the eye. Or else, you'll look at the sun with no wonder.</li>
 <p> L</p>
-<li> Limbus: A protective border so the cornea stays healthy.</li>
+  <li> Limbus: A protective border so the cornea stays healthy.</li>
 <p>M</p>
-<li> Mental: Anything having to do with your mind or thinking.</li>
-<p>N</p>
-<li> Nictitating Membrane: A third eyelid some animals have. It's like a bulit-in eye shield that helps keep clean and safe</li>
-<p>S</p>
-<li> Sclera: White part of your eye, Tough outer layer that protects the stuff inside. </li>
-<li> Socialization: Intreacting with people </li>
-<p>T</p>
-<li> Temperament: Is your personality, Think of it like your personality foundation</li>
+  <li> Mental: Anything having to do with your mind or thinking.</li>
+   <p>N</p>
+  <li> Nictitating Membrane: A third eyelid some animals have. It's like a bulit-in eye shield that helps keep clean and safe</li>
+  <p>S</p>
+  <li> Sclera: White part of your eye, Tough outer layer that protects the stuff inside. </li>
+  <li> Socialization: Intreacting with people </li>
+   <p>T</p>
+  <li> Temperament: Is your personality, Think of it like your personality foundation</li>
 
-<h5> All about cats 1.0.0 ready release</h5>
+  <h2> A Good Daily Rountine For Cats</h2>
+  <p> When I mean by good, I don't mean like waiting 73 hours to give your cat food, or anything else.</p>
+  <p>What I mean is that this helps your cat live as long as possible</p>
+  <p> Let's get a move on.</p>
+
+ <h3> Phase 1: Feeding </h3>
+ <li>Normal Feeding Times: Feed your cat at the same times every day or, at least try if you are busy.</li>
+ <h3> Phase 2: Playtime</h3>
+ <p> Play with your cat alt least 15-20 minutes daily</p>
+ <h3> Phase 3: Grooming</h3>
+ <p>Regularly brush your cat to not have loose hair.</p>
+ <h3> Phase 4: Litter Box Care</h3>
+ <p>Clean the litter box daily and disinfect it weekly.</p>
+ <h3> Phase 5: Vet Care</h3>
+ <p> Schedule regular vet check-ups and vaccinations.</p>
+ <h3> Phase 6: Rest and Relaxing</h3>
+ <p> Before I start, I know most of you always need rest and relax, Because then you could feel grumpy and random.</p>
+<li>Provide a quiet, comfy space for your cat to rest.</li>
+
+  <h5> All about cats 1.1.0 at beta</h5>
 </body>
 </html>
