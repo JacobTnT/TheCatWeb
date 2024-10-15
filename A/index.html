@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+
     <meta charset="utf-8"> 
-    <title>All About Cats </title>
-    <link rel="stylesheet" type="text/css" media="screen" href="cat.css">
-    <script src="main.js"></script>
+    <title>The Cat Web </title>
+    <link rel="stylesheet" type="text/css" media="screen" href="a.css">
+    <script defer src ="a.js"></script>
   <style>
 p.zoo {
   font-size: 30px;
@@ -110,26 +111,60 @@ p.update{
   font-size: large;
 }
 
-form{
-  background-color: rgb(255, 170, 0);
-  padding:10px 300px;
-  border-radius: 20px;
-  display: flex;
-  flex-direction:row;
-  align-items: center;
+p.lol{
+  font-size:2rem;
+}
+.hola-todos{
+  background-color: aqua;
+  padding: 10px}
+/* box 1 */
+*{
+  box-sizing: border-box;
+}
+#myInput {
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px ;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  background-color: orange;
+}
+#anyUL{
+  list-style-type: none;
+  padding: 0%;
+  margin: 0;
 }
 
-input{
-  all: unset;
-  font: 16px system-ui;
-  color: #fff;
-  height: 100%;
-  width:100%;
-  padding: 6px 10px;
+#anyUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /*Prevent Double Borders */
+  background-color: rgb(0, 128, 66);
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
 }
-::placeholder{
-  color:#fff;
-  opacity:#fff;
+p.lang{
+  font-size: 2em;
+}
+form{
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+ul{
+  display: flex;
+  flex-flow: column;
+  justify-content: left;
+  list-style-type: none;
+}
+input,
+button{
+  border-radius: 10px;
+  padding: 10px;
 }
 
     </style>
@@ -146,16 +181,25 @@ input{
       <p class = 'zoo'> Go To Jacob's Websites </p>
     </button>
   </a>
-  <h1>All About Cats Part 1<h1>
+  <h1>The Cat Web 1.2<h1>
   <h2> Introduction</h2>
 
-  <p> If you came to this website, your computer probably costs less than $100. Or    just here to see the cat lifespan and the body. I created :D</p>
+  <p> If you like cat's or not, This website has all the details of cat's, </p>
 <p> There will be pictures of cats to see how they grow from Kitten to Geriatric.</p>
-<p class = 'update'> Update Voter</p>
-<form id="form">
-   <input type="update" id = "query" name = "q" placeholder = "Search..." aria-label = "Search through site content">
-   <button> Enter</button>
-</form>
+<p class = 'update'>  A Translator, Find Different Websites To Translate From</p>
+<div class = "qq">
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for different langauges.." title="Type in a different langauge version of TheCatWeb">
+
+ <ul id = "anyUL">
+   <li><a href = "cat.html"> Spanish </a></li>
+   <li><a href = "home.html">  German</a></li>
+   <li><a href = "#">  Russian</a></li>
+   
+ </ul>
+</div>
+
+<script src = "index.js">
+</script>
   <h2 class = 'x'> Chatper 1 Their Life, Part 1, As a Kitten 1-7 months old</h2>  
   
 
@@ -163,7 +207,6 @@ input{
   changes, With a lot happening so quick it is important   for you to have a good, balanced
 friendly and confident cat. </p>
 <p> Here is what kittens look like, Don't worry, this is the start.</p>
-<img src = 'File101/kitten.jpg'>
 
   <h2 class="genz"> Chatper 2, As a Junior 1-2 years old</h3>
   <p> Just like with puberty and adolescence, or this stage The Junior Stage, It
@@ -182,7 +225,6 @@ friendly and confident cat. </p>
   </ul>
 
 <p> Here is a photo of a junior cat</p>
-<img src ='File101/JuniorCat.jpg' height="150px">
 
   <h3 class = 'brainRot'> Chatper 3, Adult Age 3 to 10 years old</h3>
   <p class="a">Cats in this stage now have made their basic personality, They dont need a lot of 
@@ -200,7 +242,7 @@ checks,Here are important stuff you need to follow.</p>
   </ol>
 
 <p> A photo of a adult cat</p>
-<img src = 'File101/AdultCat.jpg'>
+
   <h3 class = 'Webdev'> Chatper 4, Senior Age, 11-14 years old</h3>
   <p> In their golden years,Cats often sleep more  </p>
   <li> Lab work is regularly done at the yearly vet visit It will help the vet think a baseline for your cats health.</li>
@@ -211,7 +253,6 @@ checks,Here are important stuff you need to follow.</p>
 
    </ol>
   <p> A photo of a Senior Cat</p>
-  <img src="File101/SeniorCat.jpg">
 
   <h3 class = 'genAlpha'> Chatper 5, Geriatric. 15 years to 26 years </h3>
   <p>These cats encounter medical issues, exams twice a year, Keeping your pet as 
@@ -315,7 +356,6 @@ unless any bad condition is here. </li>
     The muscles connect to you'r cat's body and make better at jumping/turning. On the top, you
   can see a cat jumping. </p>
   <p> Or else it will end up sadly falling/hurting itself.</p>
-   <img src ='File101/catphoto2.0.jpeg' height="120px" width="100px">
    <p> Cat's are kinda OP.</p>
 
 
@@ -392,6 +432,13 @@ unless any bad condition is here. </li>
  <p> Before I start, I know most of you always need rest and relax, Because then you could feel grumpy and random.</p>
 <li>Provide a quiet, comfy space for your cat to rest.</li>
 
-  <h5> All about cats 1.1.0 at beta</h5>
+<p class = "lang"> Update Voter</p>
+<form>
+   <input type ="text" placeholder="Your vote">
+   <button>Vote</button>
+</form>
+<ul>
+</ul>
+  <h5> All about cats 1.2.0</h5>
 </body>
 </html>
