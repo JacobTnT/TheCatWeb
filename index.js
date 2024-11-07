@@ -77,4 +77,23 @@ searchButton.addEventListener('click', () => {
     };
  }
 });
-const socket = new WebSocket('ws')
+const socket = new WebSocket('ws//localhost:3000')
+
+function sendVote (e){
+    e.preventDefault()
+    let input = document.querySelector('input')
+if (input.value){
+    socket.send(input.value)
+    input.value = ""
+}
+ input.focus
+}
+document.querySelector('button')
+.addEventListener('submit', sendVote)
+
+// Listen for messages
+socket.addEventListener("vote", ({ message }) => {
+    let li = document.createElement('li')
+    li.textContent = message
+    document.querySelector('ul').appendChild(li)
+})

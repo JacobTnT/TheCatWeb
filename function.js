@@ -1,14 +1,4 @@
 console.log('Hello World')
-
-// for of loops
-let draft = '1,2,3,4,5';
-for (let forum of letters){
-    console.log(forum)
-
- if (draft === 4){
-    break;
- }
-}
 // Break and conutine
 // for loop
 //let j = '2'
@@ -22,15 +12,7 @@ for (let forum of letters){
 
 // while loop way
 
-let j = '3'
-while(j < aa.length){
 
-    if (j === 5){
-        break;
-    }
- console.log(j)
- j++;
-}
 const obj = {a: 1, b: 2, c: 3};
 for (let acer in obj){
     if ( acer === 'n'){
@@ -38,3 +20,25 @@ for (let acer in obj){
     }
 console.log(obj[acer]);
 }
+
+let index = {};
+index.cat = "A animal that is very furry."
+index.cat = "syntaxError"
+
+let powerUp = true;
+let jumping = false;
+// 1
+let sol = 3;
+let GasPrice1 = 5
+let GasPrice2 = 4
+let GasPrice3 = 6
+let hyperInflation1 = 30
+let hyperInflation2 = 60
+//2
+let alpha1 = "BOCAJ"; 
+let alpha2 = "BOCJA";
+let alpha3 = "JCOAB";
+let alpha4 = "JAKOB";
+let alpha5 = "BBBBB";  
+// 3
+let TicTacToe = '[[a] [b] [a]]';
