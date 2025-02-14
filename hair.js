@@ -1,20 +1,19 @@
-console.log("Hello World!")
+function myFunction (){
+    let input, filter, ul, a, i, txtValue;
+    input = document.getElementById("myInput")
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("anyUL")
+    li = ul.getElementsByTagName("li")
 
-function anyFunction(){
-    let input, filter, ul,a,i,txtValue;
-    input = document.getElementById("MyWaffles")
-    filter = input.value.ToUpperCase();
-    ul = document.getElementById('myUL')
-    li = document.getElementsByTagName('li')
-
-    for ( let j = 0; i < li.length; i++){
-        a = li[i].getElementsByTagName('a')[0];
+    for (let j = 0; j < li.length; j++){
+        a = li[j].getElementsByTagName("a")[0];
         txtValue = a.textContent || a.innerText
         if(txtValue.toUpperCase().indexOf(filter) > 0){
-            li[i].style.display = ""
+            li[j].style.display = "";
         }
-        else{
-            li[i].style.display = "none"
+        else {
+            li[j].style.display = "none";
         }
+
     }
 }

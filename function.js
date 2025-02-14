@@ -41,4 +41,29 @@ let alpha3 = "JCOAB";
 let alpha4 = "JAKOB";
 let alpha5 = "BBBBB";  
 // 3
-let TicTacToe = '[[a] [b] [a]]';
+let TicTacToe = '[[a] [b] [a]';
+
+function handleVoterClick() {
+    console.log("buitton clicked")
+    fetch("http://localhost:8080/voter/update", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            name: "option 1",
+            votes: 1
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+    })
+    .catch(error => {
+        console.log(error);
+    });
+}
+
+var voterButton = document.getElementById('voter_button');
+voterButton.addEventListener('click', handleVoterClick);
+console.log(voterButton);
