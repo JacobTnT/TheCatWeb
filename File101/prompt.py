@@ -1,10 +1,6 @@
-prompt = "\nPlease enter the name of a city you have visited"
-prompt += "\nEnter 'quit' if you would stop working and retire"
+def describePet(petName, animalType):
+    print(f"\nI have a {animalType}.")
+    print(f"My {animalType}'s name is {petName.title()}.")
 
-while True:
-  city = input(prompt)
-
-  if city == 'quit':
-    break
-  else:
-    print(f"Id love to go to {city.title()}!")
+describePet(animalType='hamster', petName='harry')
+# Compare this snippet from File101/for.py: 
