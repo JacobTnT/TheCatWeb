@@ -4,7 +4,7 @@ cars = {
   "carA1": "Price: $20,000",
 }
 print(cars)
-carInput = input("What car do you like? ")
+carInput = input("What car do you like? ").lower()
 
 # Type of car
 
@@ -19,7 +19,7 @@ elif (carInput == " B"):
     "carB": "Price: $10,000",
   }
 else:
-  print("Sorry, Your car could not be found. ").upper()
+  print("Sorry, Your car could not be found. ")
 
 # Price
 
