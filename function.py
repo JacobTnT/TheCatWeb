@@ -35,38 +35,47 @@ def smoking_function(smokingInput):
     return smokingData
     return smokingInput
 smoking_function(smokingInput)
-
-def income_function(householdIncomeInput):
-    householdIncomeInput = input("What is your household income? ")
-    if householdIncomeInput <= 25000 and genderInput == "male":
+householdIncomeInput = input("What is your household income? ")
+if householdIncomeInput <= 25000 and genderInput == "male":
      print("You can live 73-76 years old ")
-    elif householdIncomeInput <= 25000 and genderInput == "female":
+elif householdIncomeInput <= 25000 and genderInput == "female":
      print("You can live 78-81 years old")
-    else:
-     print("You can live 78.5 years old")
-    
-    if householdIncomeInput >= 28000 and householdIncomeInput <= 25000 and genderInput == "male":
+
+#0+
+if householdIncomeInput >= 28000 and householdIncomeInput <= 25000 and genderInput == "male":
       print("You can live 78 years old")
-    elif householdIncomeInput >= 28000 and genderInput == "female":
+elif householdIncomeInput >= 28000 and genderInput == "female":
       print("You can live 83 years old")
-    else:
-        print("You can live 80.5 years old")
-    
-    if householdIncomeInput >= 46120 and householdIncomeInput <= 25000 and genderInput == "male":
+   
+#28000+
+if householdIncomeInput >= 46120 and householdIncomeInput <= 28000 and genderInput == "male":
        print("You can live 80 years old")
-    elif householdIncomeInput >= 46120 and householdIncomeInput <= 28000  and genderInput == "female":
+elif householdIncomeInput >= 46120 and householdIncomeInput <= 28000  and genderInput == "female":
        print("You can live 84 years old")
-    else:
-        print("You can live 82 years old")
-    if householdIncomeInput >= 74000 and householdIncomeInput <= 46120 and genderInput == "male":
-       print("You can live 82 years old")
+#46120+
+if householdIncomeInput >= 80610 and householdIncomeInput <= 46120 and genderInput == "male":
+       print("You can live 81 years old")
 
-    elif householdIncomeInput >= 74000 and householdIncomeInput <= 46120 and genderInput == "female":
+elif householdIncomeInput >= 80160 and householdIncomeInput <= 46120 and genderInput == "female":
+      print("You can live 86 years old")
+    
+    #80160+
+if householdIncomeInput >= 115000 and householdIncomeInput <= 130000 and genderInput == "male":
+       print("You can live 84 years old")
+elif householdIncomeInput >= 115000 and householdIncomeInput <= 130000 and genderInput == "female":
+       print("You can live 86 years old")
+
+if householdIncomeInput >= 130000 and householdIncomeInput <= 200000 and genderInput == "male":
+       print("You can live to 84 years old")
+elif householdIncomeInput >= 130000 and householdIncomeInput <= 200000 and genderInput == "female":
+       print("You can live 87 years old")
+    #200000-286300
+if householdIncomeInput >= 200000 and householdIncomeInput <= 286300 and genderInput == "male":
+       print("You can live to 86 years old")
+elif householdIncomeInput >= 200000 and householdIncomeInput <= 286300 and genderInput == "female":
+       print("You can live 87 years old")
+    
        
-
-    if homeData1 == "USA" and smokingInput == "yes" and genderInput == "male":
-      print("Your life expectancy is around 50-65 years")
-
 
 
 
